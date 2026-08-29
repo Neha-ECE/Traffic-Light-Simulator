@@ -1,0 +1,8 @@
+TRAFFIC LIGHT SIMULATOR
+=======================
+
+Total Vehicles: 2
+Vehicles Passed: 0
+Vehicles Waiting: 2
+Emergency Vehicles: 1
+Traffic Efficiency: 0.00%
