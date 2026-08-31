@@ -63,6 +63,36 @@ Traffic efficiency is calculated based on the percentage of vehicles successfull
 
 ### 1. Clone the repository
 
+```bash
+git clone https://github.com/Neha-ECE/Traffic-Light-Simulator.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Traffic-Light-Simulator
+```
+
+### 3. Compile the program
+
+```bash
+g++ traffic_light.cpp -o traffic_light
+```
+
+### 4. Run the simulator
+
+**Windows:**
+
+```bash
+.\traffic_light.exe
+```
+
+**Linux/macOS:**
+
+```bash
+./traffic_light
+```
+
 ## 📸 Screenshots
 
 ### Main Menu
