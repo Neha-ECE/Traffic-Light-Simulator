@@ -1,47 +1,67 @@
 # 🚦 Traffic Light Simulator
 
-A C++ and Data Structures & Algorithms based console application that simulates traffic signal management at an intersection. The system manages normal and emergency vehicles using queues, controls traffic signal states, runs simulations, and generates traffic statistics.
-
-## 📌 Project Overview
-
-The Traffic Light Simulator demonstrates how Data Structures and Algorithms can be applied to a real-world traffic management problem.
-
-The simulator models vehicle movement through different lanes and processes vehicles according to traffic signal states and priority.
+A C++ and Data Structures based console application that simulates vehicle flow across a four-lane traffic intersection. The system manages normal and emergency vehicles using FIFO queues and priority queues, controls traffic signals, runs time-based simulations, and generates traffic statistics.
 
 ## ✨ Features
 
-- 🚗 Add normal vehicles
-- 🚑 Add emergency vehicles
-- 🚦 Display traffic signal states
-- 📋 Display vehicle queues
-- 🔎 Search vehicles
-- ▶️ Run traffic simulation
-- 📊 Display simulation statistics
-- 💾 Save statistics to a file
-- ⚡ Priority handling for emergency vehicles
+- Add normal vehicles to different lanes
+- Add emergency vehicles with priority handling
+- Manage four independent traffic lanes
+- Simulate RED, GREEN, and YELLOW traffic signals
+- Process vehicles from the active green lane
+- Give emergency vehicles higher priority
+- Search vehicles using their unique ID
+- Display vehicle queues and traffic signals
+- Run time-based traffic simulations
+- Calculate vehicles passed, waiting vehicles, and traffic efficiency
+- Save simulation statistics to a text file
+- Validate invalid user input
 
-## 🧠 DSA Concepts Used
+## 🧠 Data Structures & Concepts
 
-- Queue — manages vehicles waiting at traffic signals using FIFO processing
-- Priority Queue — gives priority to emergency vehicles
-- Searching — searches vehicles within the simulation
-- Simulation — models real-world traffic flow
-- STL containers — used for efficient data management
+- **Queue** – FIFO management of normal vehicles
+- **Priority Queue** – priority handling of emergency vehicles
+- **Vector** – storage of traffic signals and lane queues
+- **Unordered Map** – vehicle ID and vehicle type records
+- **OOP** – classes, objects, encapsulation, constructors and member functions
+- **Enums** – traffic signal states and vehicle types
+- **STL** – C++ Standard Template Library
+- **File Handling** – saving traffic statistics
+- **Multithreading & Timing** – simulation timing using `thread` and `chrono`
 
-## 💻 Technologies Used
+## 🛠️ Technologies Used
 
 - C++
 - Data Structures & Algorithms
 - Object-Oriented Programming
-- Standard Template Library (STL)
+- STL
 - File Handling
+- VS Code
+- Git & GitHub
 
-## 📂 Project Structure
+## ⚙️ How It Works
 
-```text
-Traffic-Light-Simulator/
-│
-├── traffic_light.cpp
-├── traffic_statistics.txt
-├── .gitignore
-└── README.md
+The simulator contains four traffic lanes. Each lane maintains separate queues for normal and emergency vehicles.
+
+Normal vehicles follow the **FIFO (First In, First Out)** principle using a queue, while emergency vehicles are processed with higher priority using a priority queue.
+
+The traffic signal changes between GREEN, YELLOW, and RED states. During each simulation second, the active green lane processes a vehicle, waiting times are updated, signal timers are decreased, and the traffic signal may change.
+
+## 📊 Statistics
+
+The simulator calculates:
+
+- Total Vehicles
+- Vehicles Passed
+- Vehicles Waiting
+- Emergency Vehicles
+- Traffic Efficiency
+
+Traffic efficiency is calculated based on the percentage of vehicles successfully processed during the simulation.
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Neha-ECE/Traffic-Light-Simulator.git
