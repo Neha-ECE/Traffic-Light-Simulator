@@ -65,3 +65,17 @@ Traffic efficiency is calculated based on the percentage of vehicles successfull
 
 ```bash
 git clone https://github.com/Neha-ECE/Traffic-Light-Simulator.git
+
+## Screenshots
+
+### Main Menu
+![Main Menu](main-menu.png)
+
+### Traffic Signal Simulation
+![Traffic Signal Simulation](traffic-signal-simulation.png)
+
+### Vehicle Queues
+![Vehicle Queues](vehicle-queues.png)
+
+### Traffic Statistics
+![Traffic Statistics](traffic-statistics.png)
