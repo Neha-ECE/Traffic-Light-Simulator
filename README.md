@@ -76,3 +76,11 @@ Traffic efficiency is calculated based on the percentage of vehicles successfull
 
 ### Traffic Statistics
 ![Traffic Statistics](traffic-statistics.png)
+
+## 🧠 DSA Concepts Used
+
+- **Queue:** Manages normal vehicles using FIFO (First In, First Out).
+- **Priority Queue:** Gives emergency vehicles higher priority for processing.
+- **Vector:** Stores and manages vehicle queues for multiple lanes.
+- **Unordered Map:** Stores vehicle records and enables fast average O(1) lookup.
+- **STL:** Uses C++ Standard Template Library containers and algorithms.
